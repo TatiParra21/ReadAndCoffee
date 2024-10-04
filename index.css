@@ -1,0 +1,97 @@
+html, body{
+    min-height: 100%;
+    width: 100%;
+}
+body, #submit-btn{
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#submit-btn{
+    background:yellow;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    text-align: center;
+    background-color: #3D1D03;
+}
+#top-part{
+    border: solid darkred 10px;
+}
+#expo{
+    border: solid darkgreen 10px;
+    margin-bottom: 0.5em;
+    }
+h1{
+    color:yellow;
+    }
+#top-part, #expo{
+    min-height: 30vh;
+}
+.form-class{
+    width: 90%;
+    gap:0.5em;
+}
+header{
+    margin-top: 0.5em;
+}
+/* auto height */
+#image-container, .images{
+    height: auto;
+}
+#image-container{
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.images{
+    width: 45%;
+    object-fit: contain;
+}
+.text-inp{
+    align-self: center;
+    width: 100%;
+}
+/* font-size:1.5rem */
+.pad-f, p{
+    font-size: 1.5rem;
+}
+/* padd and font */
+.pad-f{
+    padding:0.5em 0.3em; 
+}
+/* flex */
+#expo, .form-class,#top-part, #image-container{
+    display: flex; 
+}
+/* flex-direction: column */
+#expo, .form-class,#top-part{
+    flex-direction: column; 
+}
+#expo, #image-container{
+    align-items: center;
+}
+p{
+    color: #ef6e03;
+    padding: 0.5em 1em;
+}
+@media(min-width:800px){
+    #top-part, #expo{
+        height:auto;
+        width:50%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2.5rem;
+    }
+    body{
+        display:flex;
+        min-height:100vh;
+        flex-direction: row;
+    }
+}
